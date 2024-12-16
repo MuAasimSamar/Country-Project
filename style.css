@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --grey: #a1a1aa;
+  --blackBg: #09090b;
+  --white: #fff;
+}
+
+body {
+  font-family: "Nunito";
+  color: var(--white);
+}
+
+main {
+  background-color: var(--blackBg);
+  min-height: 100vh;
+}
+header.light {
+  background-color: var(--white);
+  color: var(--blackBg);
+  border-bottom: 1px solid #d2d2d2;
+
+  & .title a {
+    color: var(--blackBg);
+  }
+}
+main.light {
+  background-color: var(--white);
+  color: var(--blackBg);
+
+  & .search_Container {
+    background-color: var(--white);
+  }
+
+  & .filter {
+    background-color: var(--white);
+    color: var(--blackBg);
+    border: 0.2px solid #666;
+  }
+
+  & .filter option {
+    color: var(--blackBg);
+  }
+
+  & .search_Container input {
+    background-color: var(--white);
+    color: var(--blackBg);
+    caret-color: var(--blackBg);
+  }
+
+  & a {
+    border: 1px solid #d5cfcf;
+  }
+
+  & h3.card_title,
+  p {
+    color: #242424;
+  }
+  & .back-button {
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  & .border-countries a {
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    color: #242424;
+  }
+
+  & .shimmer-list {
+    background-color: var(--white);
+    
+  
+    & .country-card {
+      background-color: var(--white);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+
+    & .shimmerImg {
+      background-color: #ded7d7;
+      background: linear-gradient(to right,#ded7d7 0%,#e4dddd 20%,#ded7d7 40%,#ded7d7 100%);
+    }
+    & .shimmerTitle,
+    .shimmerPopulation,
+    .shimmerRegion,
+    .shimmerCapital {
+      background-color: #ded7d7;
+      background: linear-gradient(to right,#ded7d7 0%,#e4dddd 20%,#ded7d7 40%,#ded7d7 100%);
+    }
+  }
+
+  & .countryImg,
+ & .countryContainer h1, 
+ & .countryContainer p  {
+    background-color: #ded7d7;
+    background: linear-gradient(to right,#ded7d7 0%,#e4dddd 20%,#ded7d7 40%,#ded7d7 100%);
+  }
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-inline: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.card_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 749px) {
+  .search-filter-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
