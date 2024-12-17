@@ -1,4 +1,4 @@
-import styles from "./SearchFilter.module.css";
+import styles from "./SearchFilter.module";
 
 export function SearchBar({ setQuery }) {
   return (

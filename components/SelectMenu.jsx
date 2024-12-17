@@ -1,4 +1,4 @@
-import styles from './Searchfilter.module.css'
+import styles from './SearchFilter.module'
 
 export default function SelectMenu({setQuery}) {
   return (
