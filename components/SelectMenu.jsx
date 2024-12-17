@@ -16,7 +16,6 @@ const Select = styled.select`
   & option {
     color: #dadada;
   }
-
 `;
 
 export default function SelectMenu({setQuery}) {
